@@ -1,0 +1,13 @@
+; Vct.def : Declares the module parameters.
+
+LIBRARY      "SPADES.OCX"
+
+EXPORTS
+	;DllCanUnloadNow     @1 PRIVATE
+	DllCanUnloadNow	PRIVATE
+	;DllGetClassObject   @2 PRIVATE
+	DllGetClassObject	PRIVATE
+	;DllRegisterServer   @3 PRIVATE
+	DllRegisterServer	PRIVATE
+	;DllUnregisterServer @4 PRIVATE
+	DllUnregisterServer	PRIVATE

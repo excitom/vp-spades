@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unicode Release|Win32">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{5BB471D1-071E-43B3-8CF2-DB5689E45B99}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <OutDir>.\DebugU\</OutDir>
+    <IntDir>.\DebugU\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <OutDir>.\ReleaseU\</OutDir>
+    <IntDir>.\ReleaseU\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\../../Debug/Spades\</OutDir>
+    <IntDir>.\../../Debug/Spades\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\../../Release/Spades\</OutDir>
+    <IntDir>.\../../Release/Spades\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>./image32\imgCode;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\DebugU\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\DebugU\Vct.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\DebugU\</ObjectFileName>
+      <ProgramDataBaseFileName>.\DebugU\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\DebugU\Vct.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DebugU\Vct.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\DebugU\Vct.ocx</OutputFile>
+      <ImportLibrary>.\DebugU\Vct.lib</ImportLibrary>
+      <AdditionalDependencies>wsock32.lib;./image32/Debug/image32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\Vct.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" </Command>
+      <Message>Registering ActiveX Control...</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>./image32\imgCode;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseU\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\ReleaseU\Vct.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\ReleaseU\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseU\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\ReleaseU\Vct.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseU\Vct.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\ReleaseU\Vct.ocx</OutputFile>
+      <ImportLibrary>.\ReleaseU\Vct.lib</ImportLibrary>
+      <AdditionalDependencies>wsock32.lib;./image32/Release/image32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\Vct.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" </Command>
+      <Message>Registering ActiveX Control...</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>c:\games\image32\imgCode;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\../../Debug/Spades\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\../../Debug/Spades\Vct.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\../../Debug/Spades\</ObjectFileName>
+      <ProgramDataBaseFileName>.\../../Debug/Spades\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\../../Debug/Spades\Vct.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\../../Debug/Spades\Vct.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\../../Debug/Spades\Vct.ocx</OutputFile>
+      <ImportLibrary>.\../../Debug/Spades\Vct.lib</ImportLibrary>
+      <AdditionalDependencies>wsock32.lib;c:\games\image32\debug\image32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\Vct.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" </Command>
+      <Message>Registering ActiveX Control...</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>c:\games\image32\imgCode;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\../../Release/Spades\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\../../Release/Spades\Vct.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\../../Release/Spades\</ObjectFileName>
+      <ProgramDataBaseFileName>.\../../Release/Spades\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\../../Release/Spades\Vct.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <ResourceOutputFileName>..\..\Release\Spades\Spades.res</ResourceOutputFileName>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>Release/Mega.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>../../Release/Spades/spades.ocx</OutputFile>
+      <ImportLibrary>.\../../Release/Spades\spades.lib</ImportLibrary>
+      <AdditionalDependencies>c:\games\image32\Release\image32.lib;wsock32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\Vct.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" </Command>
+      <Message>Registering ActiveX Control...</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ApproveDlg.cpp" />
+    <ClCompile Include="BidDlg.cpp" />
+    <ClCompile Include="Bmp.cpp" />
+    <ClCompile Include="BnOptDlg.cpp" />
+    <ClCompile Include="Canim.cpp" />
+    <ClCompile Include="CAniTime.cpp" />
+    <ClCompile Include="card.cpp" />
+    <ClCompile Include="checksum.cpp" />
+    <ClCompile Include="ConfirmDlg.cpp" />
+    <ClCompile Include="CSound.cpp" />
+    <ClCompile Include="deck.cpp" />
+    <ClCompile Include="GameApp.cpp" />
+    <ClCompile Include="GameArea.cpp" />
+    <ClCompile Include="GameBrd.cpp" />
+    <ClCompile Include="GameBtn.cpp" />
+    <ClCompile Include="GameImg.cpp" />
+    <ClCompile Include="GameInst.cpp" />
+    <ClCompile Include="GameMIM.cpp" />
+    <ClCompile Include="GamePce.cpp" />
+    <ClCompile Include="GameSlot.cpp" />
+    <ClCompile Include="GameText.cpp" />
+    <ClCompile Include="hands.cpp" />
+    <ClCompile Include="HintDlg.cpp" />
+    <ClCompile Include="History.cpp" />
+    <ClCompile Include="LightNdr.cpp" />
+    <ClCompile Include="MsgBox.cpp" />
+    <ClCompile Include="mt19937ar.cpp" />
+    <ClCompile Include="ObjComm.cpp" />
+    <ClCompile Include="OptionDlg.cpp" />
+    <ClCompile Include="PassDialog.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TextMsgDlg.cpp" />
+    <ClCompile Include="Vct.cpp" />
+    <ClCompile Include="VctAboutBox.cpp" />
+    <ClCompile Include="VctApp.cpp" />
+    <ClCompile Include="VctComm.cpp" />
+    <ClCompile Include="VctCtl.cpp" />
+    <ClCompile Include="VctPpg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Vct.def" />
+    <CustomBuild Include="arrow.cur" />
+    <CustomBuild Include="Res\arrow.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="Vct.odl">
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">Win32</TargetEnvironment>
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">Win32</TargetEnvironment>
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Win32</TargetEnvironment>
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Win32</TargetEnvironment>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Vct.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApproveDlg.h" />
+    <ClInclude Include="BidDlg.h" />
+    <ClInclude Include="Bmp.h" />
+    <ClInclude Include="BnOptDlg.h" />
+    <ClInclude Include="Canim.h" />
+    <ClInclude Include="CAniTime.h" />
+    <ClInclude Include="card.h" />
+    <ClInclude Include="checksum.h" />
+    <ClInclude Include="ConfirmDlg.h" />
+    <ClInclude Include="CSound.h" />
+    <ClInclude Include="deck.h" />
+    <ClInclude Include="GameApp.h" />
+    <ClInclude Include="GameArea.h" />
+    <ClInclude Include="GameBrd.h" />
+    <ClInclude Include="GameBtn.h" />
+    <ClInclude Include="GameImg.h" />
+    <ClInclude Include="GameInst.h" />
+    <ClInclude Include="GameMIM.h" />
+    <ClInclude Include="GamePce.h" />
+    <ClInclude Include="GameSlot.h" />
+    <ClInclude Include="GameText.h" />
+    <ClInclude Include="hands.h" />
+    <ClInclude Include="HintDlg.h" />
+    <ClInclude Include="History.h" />
+    <ClInclude Include="LightNdr.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="MsgBox.h" />
+    <ClInclude Include="ObjComm.h" />
+    <ClInclude Include="OptionDlg.h" />
+    <ClInclude Include="PassDialog.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="str816.h" />
+    <ClInclude Include="TextMsgDlg.h" />
+    <ClInclude Include="Ubique.h" />
+    <ClInclude Include="Vct.h" />
+    <ClInclude Include="VctAboutBox.h" />
+    <ClInclude Include="VctApp.h" />
+    <ClInclude Include="VctComm.h" />
+    <ClInclude Include="VctCtl.h" />
+    <ClInclude Include="VctPpg.h" />
+    <ClInclude Include="VpClbSet.h" />
+    <ClInclude Include="VpOLE.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\2c.gif" />
+    <Image Include="Res\2d.gif" />
+    <Image Include="Res\2h.gif" />
+    <Image Include="Res\2s.gif" />
+    <Image Include="Res\3c.gif" />
+    <Image Include="Res\3d.gif" />
+    <Image Include="Res\3h.gif" />
+    <Image Include="Res\3s.gif" />
+    <Image Include="Res\4c.gif" />
+    <Image Include="Res\4d.gif" />
+    <Image Include="Res\4h.gif" />
+    <Image Include="Res\4s.gif" />
+    <Image Include="Res\5c.gif" />
+    <Image Include="Res\5d.gif" />
+    <Image Include="Res\5h.gif" />
+    <Image Include="Res\5s.gif" />
+    <Image Include="Res\6c.gif" />
+    <Image Include="Res\6d.gif" />
+    <Image Include="Res\6h.gif" />
+    <Image Include="Res\6s.gif" />
+    <Image Include="Res\7c.gif" />
+    <Image Include="Res\7d.gif" />
+    <Image Include="Res\7h.gif" />
+    <Image Include="Res\7s.gif" />
+    <Image Include="Res\8c.gif" />
+    <Image Include="Res\8d.gif" />
+    <Image Include="Res\8h.gif" />
+    <Image Include="Res\8s.gif" />
+    <Image Include="Res\9c.gif" />
+    <Image Include="Res\9d.gif" />
+    <Image Include="Res\9h.gif" />
+    <Image Include="Res\9s.gif" />
+    <Image Include="Res\ac.gif" />
+    <Image Include="Res\ad.gif" />
+    <Image Include="Res\ah.gif" />
+    <Image Include="Res\arrow_d.gif" />
+    <Image Include="Res\arrow_l.gif" />
+    <Image Include="Res\arrow_l_off.gif" />
+    <Image Include="Res\arrow_r.gif" />
+    <Image Include="Res\arrow_u.gif" />
+    <Image Include="Res\arrow_u_off.gif" />
+    <Image Include="Res\as.gif" />
+    <Image Include="Res\b.gif" />
+    <Image Include="bitmap1.bmp" />
+    <Image Include="Res\blank_card.gif" />
+    <Image Include="Res\blue_frame.gif" />
+    <Image Include="Res\blue_frame_hi.gif" />
+    <Image Include="board.bmp" />
+    <Image Include="Res\cardtable.bmp" />
+    <Image Include="Res\chair_empty.gif" />
+    <Image Include="Res\chair_hilite.gif" />
+    <Image Include="Res\dealer_off.GIF" />
+    <Image Include="Res\dealer_on.GIF" />
+    <Image Include="game_bg.gif" />
+    <Image Include="Res\GAMEGRP.gif" />
+    <Image Include="Res\jc.gif" />
+    <Image Include="Res\jd.gif" />
+    <Image Include="Res\jh.gif" />
+    <Image Include="Res\js.gif" />
+    <Image Include="Res\kc.gif" />
+    <Image Include="Res\kd.gif" />
+    <Image Include="Res\kh.gif" />
+    <Image Include="Res\ks.gif" />
+    <Image Include="meg_bg.gif" />
+    <Image Include="mega.bmp" />
+    <Image Include="megBoard.bmp" />
+    <Image Include="Res\opt_btn_over.gif" />
+    <Image Include="Res\opt_btn_up.gif" />
+    <Image Include="Res\option_down.gif" />
+    <Image Include="Res\option_up.gif" />
+    <Image Include="Res\qc.gif" />
+    <Image Include="Res\qd.gif" />
+    <Image Include="Res\qh.gif" />
+    <Image Include="Res\qs.gif" />
+    <Image Include="Res\tc.gif" />
+    <Image Include="Res\td.gif" />
+    <Image Include="Res\th.gif" />
+    <Image Include="Res\ts.gif" />
+    <Image Include="Vct.ico" />
+    <Image Include="Res\VctCtl.bmp" />
+    <Image Include="VctCtl.bmp" />
+    <Image Include="Res\yellow_frame.gif" />
+    <Image Include="Res\yellow_frame_hi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Res\awcrap.WAV" />
+    <Media Include="Res\blindnil.wav" />
+    <Media Include="Res\playcard1.wav" />
+    <Media Include="Res\shuffle.wav" />
+    <Media Include="Res\yourturn.wav" />
+    <Media Include="Res\yturn.WAV" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,88 @@
+// Vct.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (Vct.tlb) that will become a resource in
+// Vct.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(DD74050D-69DF-11D6-97C7-01C04F0E8AAD), version(1.0),
+  helpfile("Vct.hlp"),
+  helpstring("Vct ActiveX Control module"),
+  control ]
+library VCTLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CVctCtrl
+
+	[ uuid(DD74050E-69DF-11D6-97C7-01C04F0E8AAD),
+	  helpstring("Dispatch interface for Vct Control"), hidden ]
+	dispinterface _DVct
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CVctCtrl)
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CVctCtrl)
+			[id(1)] void EndGame();
+			[id(2)] void EnumMembers(long Current, short Level, long Id, BSTR Name, short Type, long X, long Y);
+			[id(3)] BSTR GetClassID();
+			[id(4)] void GetGameDetails(BSTR* Name, BSTR* Info, BSTR* SeatList, BSTR* CanChangeSeat, BSTR* CanSelectSeat, short* MinParticipants, short* MaxParticipants, BSTR* Avatar);
+			[id(5)] void JoinGroup(long Id, BSTR Name, long X, long Y, long GroupId, BSTR GroupName);
+			[id(6)] void LeaveGroup(long Id, BSTR Name, long GroupId, BSTR GroupName);
+			[id(7)] void Send(long Id, BSTR Name, short Type, long ToId, short SendType, BSTR Message, BSTR* Data);
+			[id(8)] void SendFromService(long Id, short Type, long SrvSendType, BSTR Message, BSTR* Data, long ReqId);
+			[id(9)] void StartGame(long Id, BSTR Name, long GroupId, BSTR GroupName, long LeaderId, short Capacity, long Seat);
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CVctCtrl
+
+	[ uuid(DD74050F-69DF-11D6-97C7-01C04F0E8AAD),
+	  helpstring("Event interface for Vct Control") ]
+	dispinterface _DVctEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CVctCtrl)
+			[id(1)] void DupAvatar(long ParentWnd, long Seat);
+			[id(2)] void EnumMembers(long id, short MaxLevel);
+			[id(3)] void GetParentWnd(long* hWnd);
+			[id(4)] void GetPresenceInfo(long id, BSTR* Nickname, BSTR* Fullname, BSTR* Location, BSTR* Email);
+			[id(5)] void LeaveGroup();
+			[id(6)] void QueryService(long* Id, short* Type);
+			[id(7)] void Send(long Id, short SendType, BSTR Message, BSTR* Data);
+			[id(8)] void SendToService(long ServiceId, long SrvSendType, BSTR Message, BSTR* Data, long ReqId);
+			[id(9)] void SetAvatarPos(long Seat, short Left, short Top, short Width, short Height);
+			[id(10)] void SetGameWnd(long hWnd);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CVctCtrl
+
+	[ uuid(DD740510-69DF-11D6-97C7-01C04F0E8AAD),
+	  helpstring("Vct Control"), control ]
+	coclass Vct
+	{
+		[default] dispinterface _DVct;
+		[default, source] dispinterface _DVctEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

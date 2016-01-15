@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{048280ee-3956-4b24-896c-b55b2a862789}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8afa949c-5445-4fd5-8719-ac1c4baed593}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{01b7827e-0ef8-4dd6-84df-0b7761b7d9ac}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ApproveDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BidDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bmp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BnOptDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Canim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CAniTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="card.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="checksum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfirmDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="deck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameArea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameBrd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameBtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameImg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMIM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePce.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSlot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HintDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="History.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LightNdr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mt19937ar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjComm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PassDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextMsgDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VctAboutBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VctApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VctComm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VctCtl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VctPpg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="Vct.odl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Vct.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApproveDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BidDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BnOptDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Canim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CAniTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="card.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="checksum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfirmDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="deck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameArea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBrd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBtn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameImg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMIM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePce.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSlot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HintDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="History.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightNdr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjComm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PassDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="str816.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextMsgDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ubique.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VctAboutBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VctApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VctComm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VctCtl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VctPpg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VpClbSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VpOLE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\2c.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\2d.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\2h.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\2s.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\3c.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\3d.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\3h.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\3s.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\4c.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\4d.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\4h.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\4s.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\5c.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\5d.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\5h.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\5s.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\6c.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\6d.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\6h.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\6s.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\7c.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\7d.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\7h.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\7s.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\8c.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\8d.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\8h.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\8s.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\9c.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\9d.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\9h.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\9s.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ac.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ad.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ah.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\arrow_d.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\arrow_l.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\arrow_l_off.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\arrow_r.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\arrow_u.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\arrow_u_off.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\as.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\b.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\blank_card.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\blue_frame.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\blue_frame_hi.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="board.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\cardtable.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\chair_empty.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\chair_hilite.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\dealer_off.GIF">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\dealer_on.GIF">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="game_bg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\GAMEGRP.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\jc.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\jd.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\jh.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\js.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\kc.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\kd.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\kh.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ks.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="meg_bg.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="mega.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="megBoard.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\opt_btn_over.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\opt_btn_up.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\option_down.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\option_up.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\qc.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\qd.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\qh.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\qs.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\tc.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\td.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\th.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ts.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Vct.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\VctCtl.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="VctCtl.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\yellow_frame.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\yellow_frame_hi.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Res\awcrap.WAV" />
+    <Media Include="Res\blindnil.wav" />
+    <Media Include="Res\playcard1.wav" />
+    <Media Include="Res\shuffle.wav" />
+    <Media Include="Res\yourturn.wav" />
+    <Media Include="Res\yturn.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Vct.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="arrow.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Res\arrow.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

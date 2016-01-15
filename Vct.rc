@@ -1,0 +1,680 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""Vct.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,2,1
+ PRODUCTVERSION 1,0,2,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Spades ActiveX Control Module\0"
+            VALUE "CompanyName", "Halsoft Inc.\0"
+            VALUE "FileDescription", "Spd ActiveX Control Module\0"
+            VALUE "FileVersion", "1, 0, 2, 1\0"
+            VALUE "InternalName", "Spd\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "Halsoft Inc.\0"
+            VALUE "OLESelfRegister", "\0"
+            VALUE "OriginalFilename", "Spades.OCX\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Spades game\0"
+            VALUE "ProductVersion", "1, 0, 2, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ABOUTDLL            ICON    DISCARDABLE     "Vct.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_VCT                 BITMAP  DISCARDABLE     "res\\VctCtl.bmp"
+IDB_BOARD               BITMAP  DISCARDABLE     "res\\cardtable.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX_VCT DIALOG DISCARDABLE  34, 22, 221, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spades Game"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ABOUTDLL,IDC_STATIC,10,10,20,20
+    LTEXT           "Spades Game, Version xx,  build nn",IDC_ABOUT_TITLE,44,
+                    12,170,8
+    LTEXT           "Copyright (C) 2005, Halsoft.com, Inc.",IDC_ABOUT_COPYR,
+                    44,25,170,8
+    DEFPUSHBUTTON   "OK",IDOK,95,86,32,14,WS_GROUP
+    LTEXT           "Programming:",IDC_ABOUT_TEXT1,44,38,44,8
+    LTEXT           "Graphic Design:",IDC_ABOUT_TEXT2,44,48,52,8
+    LTEXT           "Vocals:",IDC_ABOUT_TEXT3,44,58,24,8
+    LTEXT           "Tom Lang",IDC_ABOUT_TEXT4,110,38,33,8
+    LTEXT           "Tori Breitling",IDC_ABOUT_TEXT5,110,48,40,8
+    LTEXT           "Genevieve Van Cleve",IDC_ABOUT_TEXT6,110,58,70,8
+    LTEXT           "Project Manager:",IDC_STATIC,44,68,55,8
+    LTEXT           "Julie Gomoll",IDC_STATIC,110,68,38,8
+END
+
+IDD_PROPPAGE_VCT DIALOG DISCARDABLE  0, 0, 250, 42
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_HINT DIALOG DISCARDABLE  0, 0, 189, 74
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "How many tricks can you take?"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ABOUTDLL,IDC_STATIC,4,8,20,20
+    DEFPUSHBUTTON   "Hint to Partner",IDHINT,32,54,50,14
+    PUSHBUTTON      "Bid NIL",IDNIL,107,54,50,14
+    LTEXT           "0",IDC_HINT_TEXT1,37,18,9,14
+    CONTROL         "",IDC_SLIDER1,"{F08DF954-8592-11D1-B16A-00C0F0283628}",
+                    WS_TABSTOP,31,30,127,24
+    LTEXT           "6",IDC_HINT_TEXT2,89,18,9,14
+    LTEXT           "13",IDC_HINT_TEXT3,145,18,9,14
+END
+
+IDD_BID DIALOG DISCARDABLE  0, 0, 187, 85
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "How many tricks can your team take?"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ABOUTDLL,IDC_STATIC,5,5,21,20
+    DEFPUSHBUTTON   "Bid for Team",IDBID,30,65,50,14
+    PUSHBUTTON      "Bid NIL",IDNIL,108,65,50,14
+    LTEXT           "0",IDC_HINT_TEXT1,36,24,9,14
+    CONTROL         "",IDC_SLIDER1,"{F08DF954-8592-11D1-B16A-00C0F0283628}",
+                    WS_TABSTOP,30,36,127,24
+    LTEXT           "6",IDC_HINT_TEXT2,88,24,9,14
+    LTEXT           "13",IDC_HINT_TEXT3,144,24,9,14
+    LTEXT           "Your partner hinted XX",IDC_PARTNER_HINT,55,9,109,11
+END
+
+IDD_BN_OPT DIALOG DISCARDABLE  0, 0, 187, 42
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Do you want to bid Blind Nil?"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ABOUTDLL,IDC_STATIC,10,9,21,20
+    DEFPUSHBUTTON   "Show the Cards",IDSHOW,42,18,55,14
+    PUSHBUTTON      "Bid Blind NIL",IDNIL,119,18,50,14
+    LTEXT           "Your partner hinted: nn",IDC_BN_HINT,61,6,73,8
+END
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 183, 202
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Game Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ABOUTDLL,IDC_STATIC,12,12,20,20
+    LTEXT           "Spades Game Options",IDC_GAME_PROP1,48,18,79,8
+    LTEXT           "Winning Score:",IDC_PROP_SCORE,21,39,50,8
+    LTEXT           "Nil Bid score:",IDC_NIL_SCORE1,21,50,42,8
+    LTEXT           "50",IDC_NIL_SCORE2,97,50,42,8
+    LTEXT           "Blind Nil Score:",IDC_NIL_SCORE3,21,86,49,8
+    LTEXT           "100",IDC_NIL_SCORE4,97,86,42,8
+    LTEXT           "Double Nil Score:",IDC_NIL_SCORE5,21,112,56,8
+    LTEXT           "Double Blind Nil Score:",IDC_NIL_SCORE6,21,123,74,8
+    CONTROL         "250",IDC_RADIO_WIN_SCORE1,"Button",BS_AUTORADIOBUTTON,
+                    97,38,28,10
+    CONTROL         "500",IDC_RADIO_WIN_SCORE2,"Button",BS_AUTORADIOBUTTON,
+                    136,38,28,10
+    CONTROL         "100",IDC_NIL_RADIO1,"Button",BS_AUTORADIOBUTTON,97,111,
+                    28,10
+    CONTROL         "200",IDC_NIL_RADIO2,"Button",BS_AUTORADIOBUTTON,136,111,
+                    28,10
+    CONTROL         "200",IDC_NIL_RADIO3,"Button",BS_AUTORADIOBUTTON,97,122,
+                    28,10
+    CONTROL         "400",IDC_NIL_RADIO4,"Button",BS_AUTORADIOBUTTON,136,122,
+                    28,10
+    LTEXT           "Blind Nil offered if score difference is 100 points or more.",
+                    IDC_BN_TEXT,21,62,118,19
+    DEFPUSHBUTTON   "OK",IDC_PROP_OK,41,178,44,16
+    PUSHBUTTON      "Cancel",IDC_PROP_CANCEL,98,178,44,16
+    LTEXT           "Double Nil means both partners bid nil.",IDC_STATIC,21,
+                    101,130,11
+    LTEXT           "When a nil bid is set, do the tricks taken count toward the team bid?",
+                    IDC_STATIC,21,137,140,18
+    CONTROL         "Yes",IDC_NIL_TRICKS_COUNT,"Button",BS_AUTORADIOBUTTON,
+                    48,156,35,12
+    CONTROL         "No",IDC_NIL_SOLO,"Button",BS_AUTORADIOBUTTON,106,154,29,
+                    16
+END
+
+IDD_HISTORY DIALOG DISCARDABLE  0, 0, 186, 148
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Game History"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,67,127,50,14,WS_GROUP
+    EDITTEXT        IDC_HISTORY,7,7,172,100,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL | 
+                    WS_GROUP
+    CONTROL         "Newest first",IDC_RADIO_REV,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,28,110,52,12
+    CONTROL         "Oldest first",IDC_RADIO_FWD,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,104,110,52,12
+END
+
+IDD_MSGBOX DIALOG DISCARDABLE  0, 0, 186, 63
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spades Game"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,42,50,14
+    ICON            IDI_ABOUTDLL,IDC_STATIC,7,9,20,20
+    LTEXT           "Placeholder",IDC_MESSAGE_TEXT,47,7,132,29
+END
+
+IDD_APPROVE DIALOG DISCARDABLE  0, 0, 186, 87
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spades Game"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,63,66,22,14
+    PUSHBUTTON      "No",IDCANCEL,101,66,22,14
+    ICON            IDI_ABOUTDLL,IDC_STATIC,7,22,20,20
+    LTEXT           "XXXXXXXXXXXXXXXXXXXX joined the game but XXXXXXXXXXXXXXXXXXXX was expected.",
+                    IDC_APPROVE_MSG,35,16,138,28
+    LTEXT           "Do you approve?",IDC_APPROVE,64,47,56,11
+END
+
+IDD_PASS DIALOG DISCARDABLE  0, 0, 198, 78
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,37,57,50,14
+    PUSHBUTTON      "No, Start Over",IDCANCEL,109,57,50,14
+    ICON            IDI_ABOUTDLL,IDC_STATIC,7,21,21,20
+    LTEXT           "You have selected two cards to pass. Are you ready to give them to your partner now?",
+                    IDC_STATIC,38,20,121,25
+END
+
+IDD_CONFIRM DIALOG DISCARDABLE  0, 0, 186, 71
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Confirm"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,33,49,50,14
+    PUSHBUTTON      "No",IDCANCEL,103,49,50,14
+    ICON            IDI_ABOUTDLL,IDC_STATIC,7,20,21,20
+    LTEXT           "You just bid X\nIs this correct?",IDC_CONFIRM_MSG,51,20,
+                    93,25
+END
+
+IDD_TEXT_MSG DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spades Game"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,74,50,14
+    ICON            IDI_ABOUTDLL,IDC_STATIC,7,26,20,20
+    LTEXT           "Placeholder text, will be updated at runtime",
+                    IDC_TEXT_MSG,37,7,136,63
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX_VCT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_PROPPAGE_VCT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+
+    IDD_HINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 184
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_BID, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 181
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_BN_OPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 180
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_HISTORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_MSGBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_APPROVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_PASS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_CONFIRM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_TEXT_MSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// GIFIMAGE
+//
+
+IDG_GAMEGROUP           GIFIMAGE DISCARDABLE    "res\\gamegrp.gif"
+GIF_CARD_2C             GIFIMAGE DISCARDABLE    "res\\2c.gif"
+GIF_CARD_3C             GIFIMAGE DISCARDABLE    "res\\3c.gif"
+GIF_CARD_4C             GIFIMAGE DISCARDABLE    "res\\4c.gif"
+GIF_CARD_5C             GIFIMAGE DISCARDABLE    "res\\5c.gif"
+GIF_CARD_6C             GIFIMAGE DISCARDABLE    "res\\6c.gif"
+GIF_CARD_7C             GIFIMAGE DISCARDABLE    "res\\7c.gif"
+GIF_CARD_8C             GIFIMAGE DISCARDABLE    "res\\8c.gif"
+GIF_CARD_9C             GIFIMAGE DISCARDABLE    "res\\9c.gif"
+GIF_CARD_TC             GIFIMAGE DISCARDABLE    "res\\tc.gif"
+GIF_CARD_JC             GIFIMAGE DISCARDABLE    "res\\jc.gif"
+GIF_CARD_QC             GIFIMAGE DISCARDABLE    "res\\qc.gif"
+GIF_CARD_KC             GIFIMAGE DISCARDABLE    "res\\kc.gif"
+GIF_CARD_AC             GIFIMAGE DISCARDABLE    "res\\ac.gif"
+GIF_CARD_2D             GIFIMAGE DISCARDABLE    "res\\2d.gif"
+GIF_CARD_3D             GIFIMAGE DISCARDABLE    "res\\3d.gif"
+GIF_CARD_4D             GIFIMAGE DISCARDABLE    "res\\4d.gif"
+GIF_CARD_5D             GIFIMAGE DISCARDABLE    "res\\5d.gif"
+GIF_CARD_6D             GIFIMAGE DISCARDABLE    "res\\6d.gif"
+GIF_CARD_7D             GIFIMAGE DISCARDABLE    "res\\7d.gif"
+GIF_CARD_8D             GIFIMAGE DISCARDABLE    "res\\8d.gif"
+GIF_CARD_9D             GIFIMAGE DISCARDABLE    "res\\9d.gif"
+GIF_CARD_TD             GIFIMAGE DISCARDABLE    "res\\td.gif"
+GIF_CARD_JD             GIFIMAGE DISCARDABLE    "res\\jd.gif"
+GIF_CARD_QD             GIFIMAGE DISCARDABLE    "res\\qd.gif"
+GIF_CARD_KD             GIFIMAGE DISCARDABLE    "res\\kd.gif"
+GIF_CARD_AD             GIFIMAGE DISCARDABLE    "res\\ad.gif"
+GIF_CARD_2H             GIFIMAGE DISCARDABLE    "res\\2h.gif"
+GIF_CARD_3H             GIFIMAGE DISCARDABLE    "res\\3h.gif"
+GIF_CARD_4H             GIFIMAGE DISCARDABLE    "res\\4h.gif"
+GIF_CARD_5H             GIFIMAGE DISCARDABLE    "res\\5h.gif"
+GIF_CARD_6H             GIFIMAGE DISCARDABLE    "res\\6h.gif"
+GIF_CARD_7H             GIFIMAGE DISCARDABLE    "res\\7h.gif"
+GIF_CARD_8H             GIFIMAGE DISCARDABLE    "res\\8h.gif"
+GIF_CARD_9H             GIFIMAGE DISCARDABLE    "res\\9h.gif"
+GIF_CARD_TH             GIFIMAGE DISCARDABLE    "res\\th.gif"
+GIF_CARD_JH             GIFIMAGE DISCARDABLE    "res\\jh.gif"
+GIF_CARD_QH             GIFIMAGE DISCARDABLE    "res\\qh.gif"
+GIF_CARD_KH             GIFIMAGE DISCARDABLE    "res\\kh.gif"
+GIF_CARD_AH             GIFIMAGE DISCARDABLE    "res\\ah.gif"
+GIF_CARD_2S             GIFIMAGE DISCARDABLE    "res\\2s.gif"
+GIF_CARD_3S             GIFIMAGE DISCARDABLE    "res\\3s.gif"
+GIF_CARD_4S             GIFIMAGE DISCARDABLE    "res\\4s.gif"
+GIF_CARD_5S             GIFIMAGE DISCARDABLE    "res\\5s.gif"
+GIF_CARD_6S             GIFIMAGE DISCARDABLE    "res\\6s.gif"
+GIF_CARD_7S             GIFIMAGE DISCARDABLE    "res\\7s.gif"
+GIF_CARD_8S             GIFIMAGE DISCARDABLE    "res\\8s.gif"
+GIF_CARD_9S             GIFIMAGE DISCARDABLE    "res\\9s.gif"
+GIF_CARD_TS             GIFIMAGE DISCARDABLE    "res\\ts.gif"
+GIF_CARD_JS             GIFIMAGE DISCARDABLE    "res\\js.gif"
+GIF_CARD_QS             GIFIMAGE DISCARDABLE    "res\\qs.gif"
+GIF_CARD_KS             GIFIMAGE DISCARDABLE    "res\\ks.gif"
+GIF_CARD_AS             GIFIMAGE DISCARDABLE    "res\\as.gif"
+GIF_CARD_BACK           GIFIMAGE DISCARDABLE    "res\\b.gif"
+GIF_CARD_BLANK          GIFIMAGE DISCARDABLE    "res\\blank_card.gif"
+GIF_TEAM1               GIFIMAGE DISCARDABLE    "res\\yellow_frame.gif"
+GIF_TEAM1_HILITE        GIFIMAGE DISCARDABLE    "res\\yellow_frame_hi.gif"
+GIF_TEAM2               GIFIMAGE DISCARDABLE    "res\\blue_frame.gif"
+GIF_TEAM2_HILITE        GIFIMAGE DISCARDABLE    "res\\blue_frame_hi.gif"
+GIF_BTN_UP              GIFIMAGE DISCARDABLE    "res\\option_up.gif"
+GIF_BTN_UP_HI           GIFIMAGE DISCARDABLE    "res\\option_down.gif"
+GIF_BTN_DOWN            GIFIMAGE DISCARDABLE    "res\\option_up.gif"
+GIF_BTN_DOWN_HI         GIFIMAGE DISCARDABLE    "res\\option_down.gif"
+GIF_ARROW_U             GIFIMAGE DISCARDABLE    "res\\arrow_u.gif"
+GIF_ARROW_U_OFF         GIFIMAGE DISCARDABLE    "res\\arrow_u_off.gif"
+GIF_ARROW_D             GIFIMAGE DISCARDABLE    "res\\arrow_d.gif"
+GIF_ARROW_D_OFF         GIFIMAGE DISCARDABLE    "res\\arrow_u_off.gif"
+GIF_ARROW_L             GIFIMAGE DISCARDABLE    "res\\arrow_l.gif"
+GIF_ARROW_L_OFF         GIFIMAGE DISCARDABLE    "res\\arrow_l_off.gif"
+GIF_ARROW_R             GIFIMAGE DISCARDABLE    "res\\arrow_r.gif"
+GIF_ARROW_R_OFF         GIFIMAGE DISCARDABLE    "res\\arrow_l_off.gif"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_HINT DLGINIT
+BEGIN
+    IDC_SLIDER1, 0x376, 192, 0
+0x0024, 0x0000, 0x0039, 0x0033, 0x0036, 0x0038, 0x0032, 0x0036, 0x0035, 
+0x0045, 0x002d, 0x0038, 0x0035, 0x0046, 0x0045, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0038, 0x0042, 0x0045, 0x0033, 0x002d, 0x0030, 
+0x0030, 0x0030, 0x0030, 0x0046, 0x0038, 0x0037, 0x0035, 0x0034, 0x0044, 
+0x0041, 0x0031, 0x4321, 0x1234, 0x0008, 0x0000, 0x13be, 0x0000, 0x0408, 
+0x0000, 0xae11, 0x0a2b, 0x0000, 0x0006, 0x001c, 0x0000, 0x0000, 0x0000, 
+0x0005, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x000d, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0xef01, 0xabcd, 0x0000, 0x0005, 0x6920, 
+0x02cd, 0x0006, 0x0000, 0xffff, 0xffff, 0xffff, 0xffff, 0xf6dc, 0x0013, 
+0xde1f, 0xbdec, 0x0001, 0x0005, 0xf6dc, 0x0013, 
+    0
+END
+
+IDD_BID DLGINIT
+BEGIN
+    IDC_SLIDER1, 0x376, 192, 0
+0x0024, 0x0000, 0x0039, 0x0033, 0x0036, 0x0038, 0x0032, 0x0036, 0x0035, 
+0x0045, 0x002d, 0x0038, 0x0035, 0x0046, 0x0045, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0038, 0x0042, 0x0045, 0x0033, 0x002d, 0x0030, 
+0x0030, 0x0030, 0x0030, 0x0046, 0x0038, 0x0037, 0x0035, 0x0034, 0x0044, 
+0x0041, 0x0031, 0x4321, 0x1234, 0x0008, 0x0000, 0x13be, 0x0000, 0x0408, 
+0x0000, 0xae11, 0x0a2b, 0x0000, 0x0006, 0x001c, 0x0000, 0x0000, 0x0000, 
+0x0005, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x000d, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0xef01, 0xabcd, 0x0000, 0x0005, 0xd570, 
+0x0260, 0x0006, 0x0000, 0xffff, 0xffff, 0xffff, 0xffff, 0xf6e8, 0x0013, 
+0xde1f, 0xbdec, 0x0001, 0x0005, 0xf6e8, 0x0013, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_OPT MENU DISCARDABLE 
+BEGIN
+    POPUP "Base"
+    BEGIN
+        MENUITEM "New Game",                    ID_MENU_NEW, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Sound On",                    ID_MENU_SOUND, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Game Options ...",            ID_GAMEOPTIONS
+        MENUITEM "About Spades ...",            ID_GAMEOPTIONS_ABOUTSPADES
+        MENUITEM "Game Rules ...",              ID_MENU_HELP
+        MENUITEM "Game History ...",            ID_MENU_HISTORY
+        MENUITEM SEPARATOR
+        MENUITEM "Leave Game",                  ID_MENU_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_POINTER             CURSOR  DISCARDABLE     "res\\arrow.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVSOUND
+//
+
+WAV_SHUFFLE             WAVSOUND DISCARDABLE    "res\\shuffle.wav"
+WAV_YOURTURN            WAVSOUND DISCARDABLE    "res\\yourturn.wav"
+WAV_PLAYCARD            WAVSOUND DISCARDABLE    "res\\playcard1.wav"
+WAV_BLINDNIL            WAVSOUND DISCARDABLE    "res\\blindnil.wav"
+WAV_YOURTURN2           WAVSOUND DISCARDABLE    "res\\yturn.wav"
+WAV_SET                 WAVSOUND DISCARDABLE    "res\\awcrap.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VCT                 "Spades Control"
+    IDS_VCT_PPG             "Spades Property Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GAME_PPG_CAPTION    "General"
+    IDS_GAME_TITLE          "Spades"
+    IDS_GMGR_NAME           "Spades GameGroup"
+    IDS_GMGR_SLOTLIST       "42,87,24,32,Team 1,Player1; 6,70,24,32,Team 2,Player1; 42,50,24,32,Team 1,Player2; 78,70,24,32,Team 2,Player2; 8,2,18,24,Viewer1;32,2,18,24,Viewer2;57,2,18,24,Viewer3;80,2,18,24,Viewer4;"
+    IDS_GMGR_MOREINFO       "http://www.vpchat.com/spades"
+    IDS_GMGR_CANCHNGSLOT    "N"
+    IDS_GMGR_CANSLCTSLOT    "N"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GMGR_MINPLRS        "4"
+    IDS_GMGR_MAXPLRS        "8"
+    IDS_GAME_CORRUPTED      "Corrupted game message - possible cheating detected!"
+    IDS_GAME_NO_RESTORE     "Sorry, saved game cannot be restored"
+    IDS_GAME_NO_RESTART     "Sorry, only the leader may restart the game"
+    IDS_OPT_LDR_ONLY        "Sorry, on the person who started the game may change these options"
+    IDS_OPT_STARTED         "Sorry, these options may not be changed after the game has started"
+    IDS_FOLLOW_SUIT         "Sorry, you must follow suit"
+    IDS_TRUMP1              "Sorry, you may not play trump on the first hand"
+    IDS_TRUMP2              "Sorry, you may not lead trump until a trick has been trumped"
+    IDS_HELP_URL            "http://vpchat.com/spades"
+    IDS_ABOUT_TITLE         "Spades Game, Version %d.%d, build %d"
+    IDS_PARTNER_HINT        "Your partner hinted %d"
+    IDS_PARTNER_NIL         "Your partner bid Nil"
+    IDS_PARTNER_BN          "Your partner bid Blind Nil"
+    IDS_EXIT_GAME           "End the Game"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WRONG_PLAYER        "Sorry, you're in the wrong seat. The game cannot continue."
+    IDS_BIDDING             "Bidding ..."
+    IDS_HINTING             "Hinting ..."
+    IDS_PASSING             "Passing ..."
+    IDS_DEALER              "Dealer"
+    IDS_BID_CONFIRM         "You bid for the team: "
+    IDS_CONFIRM             "Is this correct?"
+    IDS_HINT_CONFIRM        "You hinted: "
+    IDS_NIL_CONFIRM         "You bid Nil\nIs this correct?"
+    IDS_RECEIVE_PASS        "Your partner has passed you two cards."
+    IDS_BLIND_NIL           "Blind Nil"
+    IDS_DOUBLE_NIL          "Double Nil"
+    IDS_NIL_BID             "Nil Bid"
+    IDS_TEAM_BID            "Team bid: %d"
+    IDS_HINT                "Hint: %d"
+    IDS_TAKEN1              "Taken: %d"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TAKEN2              "Taken: %d (%d)"
+    IDS_PLAYED              "%s played the %s of %s"
+    IDS_JOINED              "%s joined the game as Team %d Player %d"
+    IDS_BID_FOR_TEAM        "%s bid %d for the team"
+    IDS_BLIND_NIL_BID       "This is a blind Nil"
+    IDS_BID_NIL             "%s bid Nil"
+    IDS_HINTED              "%s hinted %d"
+    IDS_DOUBLE_NIL_BID      "Team %d is attempting a double Nil"
+    IDS_NIL_TRICKS          "%s bid nil, took %d tricks, but they don't count toward the team bid"
+    IDS_TEAM_RESULTS        "Team %d bid %d %s, took %d"
+    IDS_TEAM_SCORE          "Team %d took %d %s this hand, total %d"
+    IDS_SANDBAG             "Team %d score -100 due to sandbagging rule"
+    IDS_BID_SET             "Team %d bid was set"
+    IDS_TEAM_SUMMARY        "Team %d scored %d this hand"
+    IDS_TEAM_TOTALS         "Team 1 total score is %d\r\nTeam 2 total score is %d"
+    IDS_TEAM_WINNERS        "Team %d wins the game, winners %s and %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TIE_GAME            "Tie game"
+    IDS_BACKDOOR            "Team %d went out the back door"
+    IDS_DOUBLE_BACKDOOR     "Both teams went out the back door"
+    IDS_DBN_SET             "%s Double Blind Nil was set, -%d points"
+    IDS_BN_SET              "%s Blind Nil was set, -%d points"
+    IDS_DN_SET              "%s Double Nil was set, -%d points"
+    IDS_NIL_SET             "%s Nil bid was set, -%d points"
+    IDS_DBN_MADE            "%s made Double Blind Nil bid, %d points"
+    IDS_BN_MADE             "%s made Blind Nil bid, %d points"
+    IDS_DN_MADE             "%s made Double Nil bid, %d points"
+    IDS_NIL_MADE            "%s made Nil bid, %d points"
+    IDS_OLDER_VERSION       "Your opponent is using an older version of the game. This may cause problems. Encourage him or her to upgrade."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "Vct.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

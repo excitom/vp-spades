@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Vct - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\tombo\LOCALS~1\Temp\RSP1280.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "c:\games\image32\imgCode" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"../../Release/Spades/Vct.pch" /Yu"stdafx.h" /Fo"../../Release/Spades/" /Fd"../../Release/Spades/" /FD /c 
+"C:\games\games-Source\Source\Spades\VctApp.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\tombo\LOCALS~1\Temp\RSP1280.tmp" 
+Creating temporary file "C:\DOCUME~1\tombo\LOCALS~1\Temp\RSP1281.tmp" with contents
+[
+c:\games\image32\Release\image32.lib wsock32.lib winmm.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"../../Release/Spades/spades.pdb" /machine:I386 /def:".\Vct.def" /out:"../../Release/Spades/spades.ocx" /implib:"../../Release/Spades/spades.lib" 
+"\games\games-Source\Release\Spades\ApproveDlg.obj"
+"\games\games-Source\Release\Spades\BidDlg.obj"
+"\games\games-Source\Release\Spades\Bmp.obj"
+"\games\games-Source\Release\Spades\BnOptDlg.obj"
+"\games\games-Source\Release\Spades\Canim.obj"
+"\games\games-Source\Release\Spades\CAniTime.obj"
+"\games\games-Source\Release\Spades\card.obj"
+"\games\games-Source\Release\Spades\checksum.obj"
+"\games\games-Source\Release\Spades\ConfirmDlg.obj"
+"\games\games-Source\Release\Spades\CSound.obj"
+"\games\games-Source\Release\Spades\deck.obj"
+"\games\games-Source\Release\Spades\GameApp.obj"
+"\games\games-Source\Release\Spades\GameArea.obj"
+"\games\games-Source\Release\Spades\GameBrd.obj"
+"\games\games-Source\Release\Spades\GameBtn.obj"
+"\games\games-Source\Release\Spades\GameImg.obj"
+"\games\games-Source\Release\Spades\GameInst.obj"
+"\games\games-Source\Release\Spades\GameMIM.obj"
+"\games\games-Source\Release\Spades\GamePce.obj"
+"\games\games-Source\Release\Spades\GameSlot.obj"
+"\games\games-Source\Release\Spades\GameText.obj"
+"\games\games-Source\Release\Spades\hands.obj"
+"\games\games-Source\Release\Spades\HintDlg.obj"
+"\games\games-Source\Release\Spades\History.obj"
+"\games\games-Source\Release\Spades\LightNdr.obj"
+"\games\games-Source\Release\Spades\MsgBox.obj"
+"\games\games-Source\Release\Spades\mt19937ar.obj"
+"\games\games-Source\Release\Spades\ObjComm.obj"
+"\games\games-Source\Release\Spades\OptionDlg.obj"
+"\games\games-Source\Release\Spades\PassDialog.obj"
+"\games\games-Source\Release\Spades\StdAfx.obj"
+"\games\games-Source\Release\Spades\TextMsgDlg.obj"
+"\games\games-Source\Release\Spades\Vct.obj"
+"\games\games-Source\Release\Spades\VctAboutBox.obj"
+"\games\games-Source\Release\Spades\VctApp.obj"
+"\games\games-Source\Release\Spades\VctComm.obj"
+"\games\games-Source\Release\Spades\VctCtl.obj"
+"\games\games-Source\Release\Spades\VctPpg.obj"
+"\games\games-Source\Release\Spades\Spades.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\tombo\LOCALS~1\Temp\RSP1281.tmp"
+Creating temporary file "C:\DOCUME~1\tombo\LOCALS~1\Temp\RSP1282.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\games\games-Source\Release\Spades\spades.ocx"
+echo regsvr32 exec. time > ".\../../Release/Spades\regsvr32.trg"
+]
+Creating command line "C:\DOCUME~1\tombo\LOCALS~1\Temp\RSP1282.bat"
+Compiling...
+VctApp.cpp
+Linking...
+   Creating library ../../Release/Spades/spades.lib and object ../../Release/Spades/spades.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+spades.ocx - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
